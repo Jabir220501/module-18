@@ -1,0 +1,214 @@
+{
+    "pizzas": [
+        {
+            "id": 1,
+            "name": "Pepperoni Pizza",
+            "description": "Classic tomato sauce, Mozzarella cheese, Pepperoni",
+            "image": "./assets/image/pizza.svg",
+            "price": 22.00,
+            "sizes": [
+                {"id": 1, "name": "S", "additional_price": 0.00},
+                {"id": 2, "name": "M", "additional_price": 2.00},
+                {"id": 3, "name": "L", "additional_price": 4.00}
+            ],
+            "crusts": [
+                {"id": 1, "name": "Thin", "additional_price": 0.00},
+                {"id": 2, "name": "Original", "additional_price": 1.00},
+                {"id": 3, "name": "Gluten Free", "additional_price": 2.00}
+            ],
+            "sauces": [
+                {"id": 1, "name": "Tomato", "additional_price": 0.00},
+                {"id": 2, "name": "BBQ", "additional_price": 0.50},
+                {"id": 3, "name": "Alfredo", "additional_price": 0.50}
+            ],
+            "toppings": [
+                {"id": 1, "name": "Pepperoni", "additional_price": 1.00},
+                {"id": 2, "name": "Sweet Corn", "additional_price": 0.50},
+                {"id": 3, "name": "Red Onions", "additional_price": 0.50},
+                {"id": 4, "name": "Anchovies", "additional_price": 1.00},
+                {"id": 5, "name": "Mushroom", "additional_price": 0.50},
+                {"id": 6, "name": "Chicken", "additional_price": 1.50},
+                {"id": 7, "name": "Black Olives", "additional_price": 0.50},
+                {"id": 8, "name": "Spinach", "additional_price": 0.50},
+                {"id": 9, "name": "Jalapeños", "additional_price": 0.50}
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Margarita Pizza",
+            "description": "Classic tomato sauce, Mozzarella cheese, Basil",
+            "image": "./assets/image/pizza.svg",
+            "price": 18.50,
+            "sizes": [
+                {"id": 1, "name": "S", "additional_price": 0.00},
+                {"id": 2, "name": "M", "additional_price": 2.00},
+                {"id": 3, "name": "L", "additional_price": 4.00}
+            ],
+            "crusts": [
+                {"id": 1, "name": "Thin", "additional_price": 0.00},
+                {"id": 2, "name": "Original", "additional_price": 1.00},
+                {"id": 3, "name": "Gluten Free", "additional_price": 2.00}
+            ],
+            "sauces": [
+                {"id": 1, "name": "Tomato", "additional_price": 0.00},
+                {"id": 2, "name": "BBQ", "additional_price": 0.50},
+                {"id": 3, "name": "Alfredo", "additional_price": 0.50}
+            ],
+            "toppings": [
+                {"id": 1, "name": "Pepperoni", "additional_price": 1.00},
+                {"id": 2, "name": "Sweet Corn", "additional_price": 0.50},
+                {"id": 3, "name": "Red Onions", "additional_price": 0.50},
+                {"id": 4, "name": "Anchovies", "additional_price": 1.00},
+                {"id": 5, "name": "Mushroom", "additional_price": 0.50},
+                {"id": 6, "name": "Chicken", "additional_price": 1.50},
+                {"id": 7, "name": "Black Olives", "additional_price": 0.50},
+                {"id": 8, "name": "Spinach", "additional_price": 0.50},
+                {"id": 9, "name": "Jalapeños", "additional_price": 0.50}
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Deluxe",
+            "description": "Classic tomato sauce, Mozzarella cheese, Ham, Olives",
+            "image": "./assets/image/pizza.svg",
+            "price": 24.00,
+            "sizes": [
+                {"id": 1, "name": "S", "additional_price": 0.00},
+                {"id": 2, "name": "M", "additional_price": 2.00},
+                {"id": 3, "name": "L", "additional_price": 4.00}
+            ],
+            "crusts": [
+                {"id": 1, "name": "Thin", "additional_price": 0.00},
+                {"id": 2, "name": "Original", "additional_price": 1.00},
+                {"id": 3, "name": "Gluten Free", "additional_price": 2.00}
+            ],
+            "sauces": [
+                {"id": 1, "name": "Tomato", "additional_price": 0.00},
+                {"id": 2, "name": "BBQ", "additional_price": 0.50},
+                {"id": 3, "name": "Alfredo", "additional_price": 0.50}
+            ],
+            "toppings": [
+                {"id": 1, "name": "Pepperoni", "additional_price": 1.00},
+                {"id": 2, "name": "Sweet Corn", "additional_price": 0.50},
+                {"id": 3, "name": "Red Onions", "additional_price": 0.50},
+                {"id": 4, "name": "Anchovies", "additional_price": 1.00},
+                {"id": 5, "name": "Mushroom", "additional_price": 0.50},
+                {"id": 6, "name": "Chicken", "additional_price": 1.50},
+                {"id": 7, "name": "Black Olives", "additional_price": 0.50},
+                {"id": 8, "name": "Spinach", "additional_price": 0.50},
+                {"id": 9, "name": "Jalapeños", "additional_price": 0.50}
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Extravaganzza",
+            "description": "Classic tomato sauce, Mozzarella cheese, Black Olives",
+            "image": "./assets/image/pizza.svg",
+            "price": 23.00,
+            "sizes": [
+                {"id": 1, "name": "S", "additional_price": 0.00},
+                {"id": 2, "name": "M", "additional_price": 2.00},
+                {"id": 3, "name": "L", "additional_price": 4.00}
+            ],
+            "crusts": [
+                {"id": 1, "name": "Thin", "additional_price": 0.00},
+                {"id": 2, "name": "Original", "additional_price": 1.00},
+                {"id": 3, "name": "Gluten Free", "additional_price": 2.00}
+            ],
+            "sauces": [
+                {"id": 1, "name": "Tomato", "additional_price": 0.00},
+                {"id": 2, "name": "BBQ", "additional_price": 0.50},
+                {"id": 3, "name": "Alfredo", "additional_price": 0.50}
+            ],
+            "toppings": [
+                {"id": 1, "name": "Pepperoni", "additional_price": 1.00},
+                {"id": 2, "name": "Sweet Corn", "additional_price": 0.50},
+                {"id": 3, "name": "Red Onions", "additional_price": 0.50},
+                {"id": 4, "name": "Anchovies", "additional_price": 1.00},
+                {"id": 5, "name": "Mushroom", "additional_price": 0.50},
+                {"id": 6, "name": "Chicken", "additional_price": 1.50},
+                {"id": 7, "name": "Black Olives", "additional_price": 0.50},
+                {"id": 8, "name": "Spinach", "additional_price": 0.50},
+                {"id": 9, "name": "Jalapeños", "additional_price": 0.50}
+            ]
+        }
+    ],
+    "pastas": [
+        {
+            "id": 1,
+            "name": "Spaghetti Bolognese",
+            "description": "Classic Italian pasta with meat sauce",
+            "image": "path/to/spaghetti-bolognese.png",
+            "price": 15.00
+        },
+        {
+            "id": 2,
+            "name": "Fettuccine Alfredo",
+            "description": "Creamy Alfredo sauce with Parmesan cheese",
+            "image": "path/to/fettuccine-alfredo.png",
+            "price": 14.00
+        },
+        {
+            "id": 3,
+            "name": "Penne Arrabbiata",
+            "description": "Spicy tomato sauce with garlic and chili",
+            "image": "path/to/penne-arrabbiata.png",
+            "price": 13.00
+        }
+    ],
+    "chickens": [
+        {
+            "id": 1,
+            "name": "Fried Chicken",
+            "description": "Crispy fried chicken with a side of fries",
+            "image": "path/to/fried-chicken.png",
+            "price": 10.00
+        },
+        {
+            "id": 2,
+            "name": "Grilled Chicken",
+            "description": "Grilled chicken breast with herbs",
+            "image": "path/to/grilled-chicken.png",
+            "price": 12.00
+        }
+    ],
+    "breads": [
+        {
+            "id": 1,
+            "name": "Garlic Bread",
+            "description": "Toasted bread with garlic butter",
+            "image": "path/to/garlic-bread.png",
+            "price": 5.00
+        },
+        {
+            "id": 2,
+            "name": "Breadsticks",
+            "description": "Crispy breadsticks with marinara sauce",
+            "image": "path/to/breadsticks.png",
+            "price": 4.00
+        }
+    ],
+    "drinks": [
+        {
+            "id": 1,
+            "name": "Coke",
+            "description": "Classic Coca-Cola",
+            "image": "path/to/coke.png",
+            "price": 2.00
+        },
+        {
+            "id": 2,
+            "name": "Sprite",
+            "description": "Refreshing lemon-lime soda",
+            "image": "path/to/sprite.png",
+            "price": 2.00
+        },
+        {
+            "id": 3,
+            "name": "Water",
+            "description": "Bottled water",
+            "image": "path/to/water.png",
+            "price": 1.50
+        }
+    ]
+}
