@@ -7,13 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza Kiosk Menu</title>
     <link rel="stylesheet" href="./assets/css/menu.css">
-    <style>
-        /* Include your CSS styles here */
-        .category-item.active {
-            background-color: #007bff;
-            color: white;
-        }
-    </style>
 </head>
 
 <body>
@@ -41,11 +34,13 @@
 
     <header class="header-container">
         <div class="icon-button">
-            <img src="./assets/image/icons/back.svg" alt="Back Icon">
+            <a href="./"> <img src="./assets/image/icons/back.svg" alt="Back Icon"></a>
         </div>
-        <div class="icon-button">
-            <img src="./assets/image/icons/back.svg" alt="Menu Icon">
-        </div>
+        <a href="./cart.php"><div class="icon-button cart-icon">
+            <img src="./assets/image/icons/shopping-cart.png" alt="Cart Icon" style="width:25px;">
+            <span class="cart-count" id="cart-count">0</span>
+        </div></a>
+        
     </header>
 
     <section class="hero-section">
@@ -98,7 +93,7 @@
                     <p><?= $item['description'] ?></p>
                     <div class="item-footer">
                         <span class="price">$<?= number_format($item['price'], 2) ?></span>
-                        <button class="add-button">+</button>
+                        <button class="add-button" onclick="addToCart('<?= $item['name'] ?>', <?= $item['price'] ?>)">+</button>
                     </div>
                 </div>
             </div>
@@ -107,7 +102,11 @@
 
     <script>
         const menuData = <?php echo json_encode($menu); ?>;
-        
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            updateCartCount();
+        });
+
         function liveSearch() {
             const searchInput = document.getElementById('search-input').value.toLowerCase();
             const menuContainer = document.getElementById('menu-container');
@@ -149,12 +148,24 @@
                         <p>${item.description}</p>
                         <div class="item-footer">
                             <span class="price">$${item.price.toFixed(2)}</span>
-                            <button class="add-button">+</button>
+                            <button class="add-button" onclick="addToCart('${item.name}', ${item.price})">+</button>
                         </div>
                     </div>
                 `;
                 menuContainer.appendChild(menuItem);
             });
+        }
+
+        function addToCart(name, price) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push({ name, price });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            updateCartCount();
+        }
+
+        function updateCartCount() {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            document.getElementById('cart-count').innerText = cart.length;
         }
     </script>
 </body>
