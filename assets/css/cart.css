@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    padding: 1rem;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+}
+
+.back-button img {
+    width: 25px;
+    cursor: pointer;
+}
+
+.cart-items {
+    margin-bottom: 2rem;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.item-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.item-details {
+    flex-grow: 1;
+}
+
+.item-details h2 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.edit-link {
+    display: block;
+    font-size: 0.875rem;
+    color: #0078AE;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.item-price span {
+    font-size: 1rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.quantity-button {
+    background-color: #E3163D;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity {
+    font-size: 1rem;
+}
+
+.remove-button {
+    background: none;
+    border: none;
+    color: #e31837;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.promo-code-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.promo-code-input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+.apply-button {
+    background-color: #0078AE;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.total-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.checkout-button {
+    background-color: #0078AE;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}

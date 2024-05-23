@@ -36,11 +36,12 @@
         <div class="icon-button">
             <a href="./"> <img src="./assets/image/icons/back.svg" alt="Back Icon"></a>
         </div>
-        <a href="./cart.php"><div class="icon-button cart-icon">
-            <img src="./assets/image/icons/shopping-cart.png" alt="Cart Icon" style="width:25px;">
-            <span class="cart-count" id="cart-count">0</span>
-        </div></a>
-        
+        <a href="./cart.php">
+            <div class="icon-button cart-icon">
+                <img src="./assets/image/icons/shopping-cart.png" alt="Cart Icon" style="width:25px;">
+                <span class="cart-count" id="cart-count">0</span>
+            </div>
+        </a>
     </header>
 
     <section class="hero-section">
@@ -93,7 +94,7 @@
                     <p><?= $item['description'] ?></p>
                     <div class="item-footer">
                         <span class="price">$<?= number_format($item['price'], 2) ?></span>
-                        <button class="add-button" onclick="addToCart('<?= $item['name'] ?>', <?= $item['price'] ?>)">+</button>
+                        <button class="add-button" onclick="addToCart(<?= $item['id'] ?>, '<?= $item['name'] ?>', <?= $item['price'] ?>, '<?= $item['image'] ?>')">+</button>
                     </div>
                 </div>
             </div>
@@ -148,7 +149,7 @@
                         <p>${item.description}</p>
                         <div class="item-footer">
                             <span class="price">$${item.price.toFixed(2)}</span>
-                            <button class="add-button" onclick="addToCart('${item.name}', ${item.price})">+</button>
+                            <button class="add-button" onclick="addToCart(${item.id}, '${item.name}', ${item.price}, '${item.image}')">+</button>
                         </div>
                     </div>
                 `;
@@ -156,9 +157,16 @@
             });
         }
 
-        function addToCart(name, price) {
+        function addToCart(id, name, price, image) {
             let cart = JSON.parse(localStorage.getItem('cart')) || [];
-            cart.push({ name, price });
+            const existingItem = cart.find(item => item.id === id);
+
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({ id, name, price, quantity: 1, image });
+            }
+
             localStorage.setItem('cart', JSON.stringify(cart));
             updateCartCount();
         }
