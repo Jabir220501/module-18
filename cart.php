@@ -12,11 +12,11 @@
     <div class="container">
         <div class="header">
             <button class="back-button">
-                <img src="./assets/image/icons/back.svg" alt="Back Icon">
+                <a href="./menu.php"><img src="./assets/image/icons/back.svg" alt="Back Icon"></a>
+
             </button>
         </div>
         <div class="cart-items" id="cart-items">
-            <!-- Cart items will be inserted here dynamically -->
         </div>
         <div class="promo-code-container">
             <input type="text" placeholder="Promo Code" class="promo-code-input">
@@ -67,7 +67,7 @@
         function updateQuantity(id, change) {
             const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
             const item = cartItems.find(item => item.id === id);
-            
+
             if (item) {
                 item.quantity += change;
                 if (item.quantity < 1) item.quantity = 1;
