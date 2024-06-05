@@ -45,7 +45,7 @@
                     <img src="${item.image}" alt="${item.name}" class="item-image">
                     <div class="item-details">
                         <h2>${item.name}</h2>
-                        <a href="#" class="edit-link">Edit</a>
+                        <a href="./edit.php?id=${item.id}" class="edit-link">Edit</a>
                         <div class="item-price">
                             <span>$${(item.price * item.quantity).toFixed(2)}</span>
                         </div>

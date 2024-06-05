@@ -59,10 +59,6 @@
                 <img src="assets/image/icons/pasta.svg" alt="Pasta" class="category-image">
                 <h5>Pasta</h5>
             </a>
-            <a href="?category=chickens" class="category-item <?= $category == 'chickens' ? 'active' : '' ?>">
-                <img src="assets/image/icons/chicken.svg" alt="Chicken" class="category-image">
-                <h5>Chicken</h5>
-            </a>
             <a href="?category=breads" class="category-item <?= $category == 'breads' ? 'active' : '' ?>">
                 <img src="assets/image/icons/breads.svg" alt="Breads" class="category-image">
                 <h5>Breads</h5>

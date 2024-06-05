@@ -156,22 +156,6 @@
             "price": 13.00
         }
     ],
-    "chickens": [
-        {
-            "id": 1,
-            "name": "Fried Chicken",
-            "description": "Crispy fried chicken with a side of fries",
-            "image": "path/to/fried-chicken.png",
-            "price": 10.00
-        },
-        {
-            "id": 2,
-            "name": "Grilled Chicken",
-            "description": "Grilled chicken breast with herbs",
-            "image": "path/to/grilled-chicken.png",
-            "price": 12.00
-        }
-    ],
     "breads": [
         {
             "id": 1,
